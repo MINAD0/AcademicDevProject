@@ -1,4 +1,4 @@
-namespace AcademicDevP.Models
+namespace AcademicDev.Models
 {
     public class ErrorViewModel
     {
