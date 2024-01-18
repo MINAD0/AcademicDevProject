@@ -12,6 +12,7 @@ namespace AcademicDev.Models
         [DisplayName("Category Name")]
         public string Name { get; set; }
         [Range(0, 100, ErrorMessage = "Display Order must be between 1-100")]
+        [DisplayName("Quantity")]
         public int DisplayOrder { get; set; }
     }
 }

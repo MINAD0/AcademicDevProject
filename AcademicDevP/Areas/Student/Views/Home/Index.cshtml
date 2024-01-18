@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Project>
+
+
+<div class="row pb-3">
+    @foreach (var project in Model)
+    {
+        <div class="col-lg-3 col-sm-6">
+            <div class="row p-2">
+
+                <div class="col-12 p-2">
+                    <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                        <h5 class="card-header text-end bg-transparent"><i class="bi bi-bookmark-dash text-primary"></i></h5>
+                        <img src="@project.Image" class="card-img-top rounded" width="90" height="150"/>
+                        <div class="card-body pb-0">
+                            <div class="pl-1">
+                                <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@project.PrjName</p>
+                                <p class="card-title text-warning text-center">Made with : @project.Category.Name</p>
+                            </div>
+                            <div class="pl-1">
+                                <p class="text-dark text-opacity-75 text-center">
+                                    <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-primary mx-2">
+                                        More Details <i class="bi bi-info-circle"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-muted text-dark rounded">
+                            <span class="badge bg-light">
+                                Published :
+                                @project.DateOfPublish.ToString("dd/MM/yy") <i class="bi bi-calendar-event"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

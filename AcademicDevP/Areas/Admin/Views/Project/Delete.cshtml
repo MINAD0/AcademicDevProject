@@ -1,0 +1,58 @@
+﻿@model Project
+
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-primary bg-gradient m-lg-0 py-3">
+        <ol class="breadcrumb  bg-transparent">
+            <li class="breadcrumb-item"><a href="#">Project Management</a></li>
+            <li class="breadcrumb-item active">Delete</li>
+        </ol>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Delete Project</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" class="row">
+            <div class="border p-3">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="PrjName" class="form-control border-0 shadow" />
+                    <label class="ms-2">Project Name</label>
+                    <span asp-validation-for="PrjName" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="PrjName" class="form-control border-0 shadow" />
+                    <label class="ms-2">Category Name</label>
+                    <span asp-validation-for="PrjName" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Description" class="form-control border-0 shadow" />
+                    <label class="ms-2">Description</label>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="file" asp-for="Image" class="form-control border-0 shadow" />
+                    <label class="ms-2">Image</label>
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="GithubLink" class="form-control border-0 shadow" />
+                    <label class="ms-2">Link</label>
+                    <span asp-validation-for="GithubLink" class="text-danger"></span>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-danger form-control">Delete</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="Project" asp-action="Index" class="btn btn-outline-secondary form-control">Back To List</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

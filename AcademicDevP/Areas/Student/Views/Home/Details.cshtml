@@ -1,0 +1,59 @@
+﻿@model Project
+
+<form method="post">
+    <div class="card shadow border-0 mt-4">
+        <div class="card-header bg-primary bg-gradient text-light py-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-white text-uppercase">Project Details</h3>
+                    <p class="text-white-50 fw-semibold mb-0">By AL-MAHDI AIT-OUNZAR</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="py-3">
+                <div class="row">
+                    <div class="col-6 col-md-2 offset-lg-1 pb-1">
+                        <a asp-action="Index" class="btn btn-outline-primary bg-gradient mb-5 fw-semibold btn-sm text-uppercase">
+                            <small>Back to home</small>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 offset-lg-1 text-center mb-3">
+                        <img src="@Model.Image" width="100%" class="rounded" />
+                    </div>
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <div class="col-12 col-md-2 pb-4">
+                            <span class="badge bg-success">@Model.Category.Name <i class="bi bi-code-slash"></i></span>
+                        </div>
+                        <div class="row ps-2">
+                            <h6 class="text-dark text-opacity-50 "><strong>@Model.PrjName</strong></h6>
+                        </div>
+
+                        <div class="row pl-2 my-3">
+                            <p class="text-secondary lh-sm">@Html.Raw(Model.Description)</p>
+                        </div>
+                        <div class="row pl-2 my-3">
+                            <div class="col-12 col-md-2 pb-4">
+                                <span class="badge bg-light">
+                                    Published :
+                                    @Model.DateOfPublish.ToString("dd/MM/yy") <i class="bi bi-calendar-event"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 pb-1">
+                                <button type="submit"
+                                        class="btn btn-primary bg-gradient w-100 py-2 text-uppercase fw-semibold">
+                                    Code Source  <i class="bi bi-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
