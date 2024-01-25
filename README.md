@@ -42,7 +42,7 @@ Before you begin, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/yourusername/projecthub.git
-   cd projecthub
+   cd AcademicDevP
 ```dotnet restore```
 ```dotnet build ```
 2. Update the database connection string in appsettings.json:
