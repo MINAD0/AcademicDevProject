@@ -14,10 +14,7 @@ AcademicDevP is a platform that hosts a variety of projects along with their com
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Database Setup](#database-setup)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -63,3 +60,11 @@ Before you begin, make sure you have the following installed:
 2. Click on a project to view its details, source code, and documentation.
 3. Submit your own projects to contribute to the community.
    
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+The MIT License is a permissive open-source license. Feel free to use this project and its source code in your own projects. You can find a copy of the license in the [LICENSE](LICENSE) file.
+
+---
+**Note:** Customize this template to fit the specific details and structure of your ProjectHub platform.
