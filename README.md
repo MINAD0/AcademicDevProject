@@ -1,7 +1,6 @@
 # AcademicDevP
 
 AcademicDevP is a platform that hosts a variety of projects along with their complete source code. It allows developers to showcase and explore different projects across various domains.
-![ProjectHub Screenshot](/wwwroot/Images/project-screenshot.png)
 ![image](https://github.com/MINAD0/AcademicDevProject/assets/34896655/a3df7b05-4874-4dfa-808d-aed7e3506739)
 
 
