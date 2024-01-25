@@ -67,4 +67,4 @@ This project is licensed under the [MIT License](LICENSE).
 The MIT License is a permissive open-source license. Feel free to use this project and its source code in your own projects. You can find a copy of the license in the [LICENSE](LICENSE) file.
 
 ---
-**Note:** Customize this template to fit the specific details and structure of your ProjectHub platform.
+**Note:** Customize this template to fit the specific details and structure of your AcademicDevP platform.
